@@ -1,0 +1,153 @@
+body{
+    display: flex;
+    justify-content: center;
+}
+
+div {
+    display: block;
+
+    border-color: black;
+    border-width: 1px;
+    border-style: solid;
+    padding: 4px;
+
+}
+
+/*Toda la tabla*/
+div.general{
+    background-color: rgb(207, 243, 207);
+    height: 715px;
+    width: 600px;
+
+    padding: 4px;
+
+    border-collapse: collapse;
+}
+/*Cabecera cuadro*/
+div.cabecera{
+    display: flex;
+    justify-content: center;
+
+    background-color: rgb(248, 113, 113);
+    font-size: 50px;
+
+    padding-top: 3%;
+    padding-bottom: 3%;
+    }
+
+    /*Cabecera texto*/
+    div.cabecera{
+        border-style: none;
+
+        color: white;
+        font-size: 30px;
+        font-weight: 900;
+    }
+
+/*Cuadro del cuerpo*/
+div.cuerpo{
+    background-color: rgb(243, 215, 162);
+    border-collapse: collapse;
+    padding: 5px;
+}
+    /*Cuadros de cada articulo*/
+    .articulo1{
+        background-color: rgb(138, 231, 138);
+        padding-left: 7px;
+    }
+    .articulo2{
+        background-color: rgb(193, 220, 255);
+        padding-left: 7px;
+    }
+    .articulo3{
+        background-color: rgb(190, 178, 255);
+        padding-left: 7px;
+    }
+    /*Fuentes de cada articulo*/
+    div.h1{
+        border-style: none;
+
+        padding-bottom: 20px;
+        padding-top: 20px;
+
+        font-size: 30px;
+        font-weight: 1000;
+    }
+    div.h2{
+        border-style: none;
+
+        padding-bottom: 15px;
+        padding-top: 15px;
+
+        font-size: 26px;
+        font-weight: 800;
+    }
+    div.p {
+        border-style: none;
+
+        padding-bottom: 15px;
+    }
+/*Pie*/
+div.footer{
+    background-color: rgb(138, 231, 138);
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    
+}
+    /*Cada cuadro del footer*/
+    div.info1{
+        background-color: rgb(246, 226, 182);
+
+        grid-column: 1;
+        text-align: center;
+
+        margin: 0px;
+        height: 120px;
+    }
+    div.info2{
+        background-color: rgb(249, 209, 202);
+
+        grid-column: 2;
+        text-align: center;
+
+        margin: 0px;
+        height: 120px;
+    }
+    div.info3{
+        background-color: rgb(240, 243, 162);
+
+        grid-column: 3;
+        display: flex;
+        text-align: center;
+        
+        align-items: center;
+
+        margin: 0px;
+        height: 120px;
+    }
+
+
+    /*Fuentes de cada cuadro del pie*/
+    div.footer div.h3{
+        border-style: none;
+
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    div.footer div.p{
+        padding: 3px;
+    }
+
+    div.footer img{
+        width: 100%;
+        border-style: none;
+
+        align-self: center;
+    }
+
+div.subir{
+    border-style: none;
+}

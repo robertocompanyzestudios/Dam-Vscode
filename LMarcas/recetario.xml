@@ -1,0 +1,39 @@
+<recetario>
+
+    <receta>
+        <id>1</id>
+        <nombre>Tortilla de Patatas</nombre>
+        <tiempo_estimado>60min</tiempo_estimado>
+
+        <ingredientes>
+            <ingrediente>
+                <nombre>Patata</nombre>
+                <cantidad>6</cantidad>
+                <unidad_medida>Unidades</unidad_medida>
+            </ingrediente>
+
+            <ingrediente>
+                <nombre>Aceite</nombre>
+                <cantidad>200</cantidad>
+                <unidad_medida>ml</unidad_medida>
+            </ingrediente>
+
+            <ingrediente>
+                <nombre>Huevo</nombre>
+                <cantidad>6</cantidad>
+                <unidad_medida>Unidades</unidad_medida>
+            </ingrediente>
+
+            <ingrediente>
+                <nombre>Huevo</nombre>
+                <cantidad>6</cantidad>
+                <unidad_medida>Unidades</unidad_medida>
+            </ingrediente>
+
+        </ingredientes>
+
+        <elaboracion>comienza pelando y cortando las patatas en rodajas finas. Fríelas en aceite caliente hasta que estén doradas y tiernas. En un bol, bate unos huevos y mezcla con las patatas. Vierte la mezcla en una sartén caliente y cocina a fuego medio hasta cuajar. ¡Disfruta!</elaboracion>
+    </receta>
+
+
+</recetario>

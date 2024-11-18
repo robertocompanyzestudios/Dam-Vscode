@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <form>
+
+        <label for="nombre" >Nombre:</label><br>
+        <input required type="text" name="nombre"><br><br>
+
+        <label for="apellidos">Apellidos:</label><br>
+        <input required type="text" name="apellidos"><br><br>
+
+        <label for="imagen">imagen</label><br>
+        <input required type="image" name="imagen"><br><br>
+
+        <label for="birthdate">Fecha de nacimiento: </label><br>
+        <input required type="date" name="birthdate"><br><br>
+
+        <label for="direccion">Dirección: </label><br>
+        <input required type="text" name="direccion"><br><br>
+
+        <label for="telefono">Teléfono: </label><br>
+        <input required type="tel" name="telefono"><br><br>
+
+        <label for="presentacion">Presentación: </label><br>
+        <textarea name=presentacion"" id=""></textarea><br><br>
+
+        <label for="experiencia">Área de experiencia: </label>
+        <select required name="experiencia" id="">
+            <option value="hardware">Hardware</option>
+            <option value="administracion de sistemas windows">Administración de sistemas Windows</option>
+            <option value="redes">Redes</option>
+            <option value="desarrollo php">Desarrollo php</option>
+            <option value="html5">HTML5</option>
+            <option value="bootstrap">Bootstrap</option>
+        </select><br><br>
+
+        <label for="experiencia">Carné de conducir: </label><br>
+        <input type="radio" name="experiencia">
+        <label for="experiencia">Sí</label><br>
+        <input type="radio" name="experiencia">
+        <label for="experiencia">No</label><br><br>
+
+        <label for="cv">Curriculum: </label><br>
+        <input required type="file" name="cv"><br><br>
+
+        <input type="checkbox" name="condiciones" required>
+        <label for="condiciones">Acepto las condiciones de uso y normativas legales</label><br><br>
+
+
+
+
+        <input type="submit" value="Enviar">
+    </form>
+</body>
+</html>

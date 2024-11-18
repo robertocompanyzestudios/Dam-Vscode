@@ -1,0 +1,12 @@
+{"recetario":[
+
+    {"receta":[
+        {"id":1, "nombre": "Tortilla", "tiempo_estimado":"60min" ,"elaboracion":"comienza pelando y cortando las patatas en rodajas finas. Fríelas en aceite caliente hasta que estén doradas y tiernas. En un bol, bate unos huevos y mezcla con las patatas. Vierte la mezcla en una sartén caliente y cocina a fuego medio hasta cuajar. ¡Disfruta!", "ingredientes": [
+        {"ingrediente": "Patata", "cantidad": "6", "unidad_medida": "unidades"},
+        {"ingrediente": "Aceite", "cantidad": "200", "unidad_medida": "ml"},
+        {"ingrediente": "Huevo", "cantidad": "6", "unidad_medida": "unidades"},
+        {"ingrediente": "Cebolla", "cantidad": "1", "unidad_medida": "unidades"}
+        ]}
+    ]}
+]
+}
