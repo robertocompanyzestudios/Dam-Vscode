@@ -1,6 +1,8 @@
-let nuevoEnlace = document.createElement('a');
-let nodoTexto = document.createTextNode("Ejemplo")
-nuevoEnlace.appendChild(nodoTexto)
+function sumar(){
+    let operando1 = parseInt(document.getElementById("operando1").value);
+    let operando2 = parseInt(document.getElementById("operando2").value);
 
-let cuerpoRef = document.getElementsByTagName("body")[0];
-cuerpoRef.appendChild(nuevoEnlace);
+    let resultado = operando1 + operando2;
+    document.getElementById("resultado").value = resultado;
+
+}

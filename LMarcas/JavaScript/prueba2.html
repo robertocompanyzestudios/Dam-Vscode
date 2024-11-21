@@ -6,13 +6,26 @@
 </head>
 <body>
 
-    <p>
-        <a id="contacto" href="google.com">Contáctenos</a>
-    </p>
+    <fieldset>
+        <legend>Números</legend>
+        <label for="operando1">Operando1</label>
+        <input type="text" id="operando1">
 
-    <a href="">1</a>
-    <a href="">2</a>
-    <a href="">3</a>
+        <label for="operando2">Operando2</label>
+        <input type="text" id="operando2">
+    </fieldset>
+    <fieldset>
+        <legend>Operaciones</legend>
+        <input type="button" value="+" onclick="sumar()">
+        <input type="button" value="-" onclick="restar()">
+        <input type="button" value="/" onclick="dividir()">
+        <input type="button" value="x" onclick="multiplicar()">
+    </fieldset>
+    <fieldset>
+        <legend>Resultado</legend>
+        <input type="text" id="resultado">
+    </fieldset>
+
     <script src="prueba2.js"></script>
 </body>
 </html>
