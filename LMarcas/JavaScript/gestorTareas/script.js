@@ -4,7 +4,8 @@ function agregarNota(){
     let tiempo = document.getElementById("tiempo").value;
 
     let tarea = document.createElement("li");
-    tarea.innerHTML = "<li class='tarea'>"+ nota + " | Tiempo estimado: " + tiempo + " minutos | prioridad: " + prioridad + "</li>"
+    tarea.className ="tarea"
+    tarea.innerHTML =nota + " | Tiempo estimado: " + tiempo + " minutos | prioridad: " + prioridad
     let lista = document.getElementById("lista-tareas");
     lista.appendChild(tarea);
 
@@ -15,6 +16,7 @@ function borrarNota(){
     let tarea = document.getElementById("borrar-index").value;
     let index = tarea - 1;
     let tareas = document.getElementsByClassName("tarea")[index];
+    console.log(tareas)
 
     lista.removeChild(tareas);
 }
