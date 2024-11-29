@@ -6,10 +6,9 @@ public class ejer2{
 
 		int suma = 0;
 		int producto = 1;
-		
+
 		for(int i = 1; i < 11; i++){
 			suma = suma + i;
-		
 		}
 		System.out.println("Suma = " + suma);
 
@@ -17,8 +16,6 @@ public class ejer2{
 			producto = producto * i;
 		}
 		System.out.println("Producto = " + producto);
-		
-		teclado.close();
 
 	}
 }

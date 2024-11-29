@@ -1,5 +1,4 @@
 import java.util.Scanner;
-import java.lang.Math;
 
 /*Roberto Company Zomeño
 Lee 2 numeros y comprueba el mayor entre ambos*/

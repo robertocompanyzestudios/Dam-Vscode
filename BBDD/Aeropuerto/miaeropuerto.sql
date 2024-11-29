@@ -1,41 +1,38 @@
+dROP DATABASE IF EXISTS aeropuerto;
 CREATE DATABASE IF NOT EXISTS aeropuerto CHARSET=utf8mb4;
 USE aeropuerto;
 
 --Bien
-CREATE TABLE Tipo(
-    id_Tipo INT PRIMARY KEY,
+CREATE TABLE tipo(
+    id_tipo INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
     modelo VARCHAR(20),
     capacidad INT,
     peso INT
 )ENGINE=InnoDB;
 
 --Bien
-CREATE TABLE Hangar(
-    id_Hangar INT PRIMARY KEY,
-    cod_Hangar INT,
+CREATE TABLE hangar(
+    id_hangar INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+    cod_hangar INT,
     capacidad INT
 )ENGINE=InnoDB;
 
 --Bien
-CREATE TABLE Avion(
-    id_Avion INT PRIMARY KEY,
+CREATE TABLE avion(
+    id_avion INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
     n_registro INT,
-    id_Tipo VARCHAR(20) NOT NULL,
+    id_tipo VARCHAR(20) NOT NULL,
     fecha_registro DATE NOT NULL,
     antiguedad INT,
     matricula CHAR(5),
     id_hangar INT ,
-    FOREIGN KEY(id_Tipo) REFERENCES Tipo(modelo)
-        ON DELETE RESTRICT
-        ON UPDATE CASCADE,
-    FOREIGN KEY(id_Hangar) REFERENCES Hangar(cod_hangar)
-        ON DELETE SET NULL
-        ON UPDATE CASCADE
+    FOREIGN KEY(id_tipo) REFERENCES tipo(modelo),
+    FOREIGN KEY(id_hangar) REFERENCES hangar(cod_hangar)
 )ENGINE=InnoDB;
 
 --Bien
-CREATE TABLE Propietario(
-    id_Propietario INT PRIMARY KEY,
+CREATE TABLE propietario(
+    id_propietario INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
     nss INT,
     nombre VARCHAR(30) NOT NULL,
     telf VARCHAR(30) NOT NULL,
@@ -43,70 +40,70 @@ CREATE TABLE Propietario(
 )ENGINE=InnoDB;
 
 --Bien
-CREATE TABLE Piloto(
-    id_Piloto INT PRIMARY KEY,
+CREATE TABLE piloto(
+    id_piloto INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
     n_lic int,
     nss VARCHAR(50),
     nombre VARCHAR(50),
     direccion VARCHAR(50)
 )ENGINE=InnoDB;
 --Bien
-CREATE TABLE Mecanico(
-    id_Mecanico INT PRIMARY KEY,
+CREATE TABLE mecanico(
+    id_mecanico INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
     nss INT,
     direccion VARCHAR(50),
     salario INT,
     turno VARCHAR(50)
 )ENGINE=InnoDB;
 
-CREATE TABLE Hablitado (
-    id_Hablitado INT PRIMARY KEY,
-    id_Mecanico INT ,
-    id_modelo INT),
-    FOREIGN KEY(id_Mecanico) REFERENCES Mecanico(id_Mecanico)
+CREATE TABLE habilitado (
+    id_habilitado INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+    id_mecanico INT ,
+    id_modelo INT,
+    FOREIGN KEY(id_mecanico) REFERENCES mecanico(id_mecanico)
         ON DELETE CASCADE
         ON UPDATE CASCADE,
-    FOREIGN KEY(id_modelo) REFERENCES Tipo(id_Tipo)
+    FOREIGN KEY(id_modelo) REFERENCES tipo(id_tipo)
         ON DELETE CASCADE
         ON UPDATE CASCADE
 )ENGINE=InnoDB;
 
-CREATE TABLE Mantiene(
-    id_Mantiene INT PRIMARY KEY,
+CREATE TABLE mantiene(
+    id_mantiene INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
     cod_trabajo INT,
     fecha DATE NOT NULL,
     n_horas INT,
-    id_Mecanico INT ,
-    id_Avion INT ,
-    FOREIGN KEY(id_Mecanico) REFERENCES Mecanico(id_Mecanico)
+    id_mecanico INT ,
+    id_avion INT ,
+    FOREIGN KEY(id_mecanico) REFERENCES mecanico(id_mecanico)
         ON DELETE SET DEFAULT
         ON UPDATE CASCADE,
-    FOREIGN KEY(id_Avion) REFERENCES Avion(id_Avion)
+    FOREIGN KEY(id_avion) REFERENCES avion(id_avion)
         ON DELETE SET CASCADE
         ON UPDATE CASCADE
 )ENGINE=InnoDB;
 
-CREATE TABLE Compra(
-    id_Compra INT PRIMARY KEY,
+CREATE TABLE compra(
+    id_compra INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
     fecha DATE NOT NULL,
-    id_Avion INT ,
-    id_Propietario INT ,
-    FOREIGN KEY(id_Avion) REFERENCES Avion(id_Avion)
+    id_avion INT ,
+    id_propietario INT ,
+    FOREIGN KEY(id_avion) REFERENCES avion(id_avion)
         ON DELETE SET CASCADE
         ON UPDATE CASCADE,
-    FOREIGN KEY(id_Propietario) REFERENCES Propietario(id_Propietario)
+    FOREIGN KEY(id_propietario) REFERENCES propietario(id_propietario)
         ON DELETE SET DEFAULT
         ON UPDATE CASCADE
 )ENGINE=InnoDB;
 
-CREATE TABLE Capacitado(
-    id_Capacitado INT PRIMARY KEY,
+CREATE TABLE capacitado(
+    id_capacitado INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
     id_modelo INT,
-    id_Piloto INT,
-    FOREIGN KEY(id_modelo) REFERENCES Tipo(id_Tipo)
+    id_piloto INT,
+    FOREIGN KEY(id_modelo) REFERENCES tipo(id_tipo)
         ON DELETE RESTRICT
         ON UPDATE CASCADE,
-    FOREIGN KEY(id_Piloto) REFERENCES Piloto(id_Piloto)
+    FOREIGN KEY(id_piloto) REFERENCES piloto(id_piloto)
         ON DELETE RESTRICT
         ON UPDATE CASCADE
 )ENGINE=InnoDB;
