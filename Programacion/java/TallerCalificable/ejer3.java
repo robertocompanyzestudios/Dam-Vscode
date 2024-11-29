@@ -3,7 +3,6 @@ import java.util.Scanner;
 /*Roberto Company Zomeño
 Devuelve una escalera de n escalones*/
 
-
 public class ejer3{
 	public static void main(String[] args){
 
