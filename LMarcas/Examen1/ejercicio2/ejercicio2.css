@@ -1,0 +1,39 @@
+div#cuadrado {
+    border: 5px solid black;
+    padding: 15px;
+    width: 1000px;
+    height: 600px;
+    justify-content: center;
+}
+
+div#cuadrado2 {
+    height: 200px;
+    font-size: 12px;
+    text-align: center;
+}
+
+div#cuadrado3 {
+    height: 200px;
+    font-size: 12px;
+    text-align: center;
+}
+
+div#cuadrado4 {
+    height: 200px;
+    font-size: 12px;
+    text-align: center;
+}
+
+
+/*
+body{
+    display: grid;
+    grid-template-columns: 1fr, 1fr;
+}
+
+loquesea{
+    grid-column: 1;
+    grid-row: 2;
+}
+
+*/

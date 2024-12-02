@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Ejercicio3</title>
+        <link rel="stylesheet" href="ejercicio3.css">
+    </head>
+    <body>
+        <table id="tabla_general">
+        <tr>
+            <td>
+
+            <table id="tabla_izquierda">
+            <tr>
+                <th ><h2>Instrucciones</h2></th><br>
+            <tr>
+                <td >Para darse de alta en esta página web debe completar los siguientes campos:</th><br>
+            </tr>
+            <tr>
+
+                <td > 
+                        <ol>
+                            <li>Su nombre</li>
+                            <li>Sus apellidos</li>
+                            <li>Una contraseña</li>
+                            <li>Su fecha de nacimiento</li>
+                            <li>Su dirección</li>
+                            <li>Su género</li>
+                            <li>Sus afficiones</li>
+                            <li>Una breve descripción de sus intereses</li>
+                            <li>Una fotografía reciente</li>
+                        </ol>
+                    </th>
+                </td>
+
+            </tr>
+            </table>
+
+            </td>
+        
+
+            <td>
+
+                <table id="tabla_derecha">
+                <tr>
+                    <th >Alta</th>
+                </tr>
+                <tr>
+                    <th >Todos los campos son obligatorios</td>
+                </tr>
+                <tr>
+                    <td>
+                        <form id="formulario">
+                        <label for="nombre">Nombre:</label>
+                        <input type="text" id="nombre" name="nombre"><br>
+
+                        <label for="apellidos">Apellidos:</label>
+                        <input type="text" id="apellidos" name="apellidos"><br>
+
+                        <label for="contraseña">Contraseña:</label>
+                        <input type="password" id="contraseña" name="contraseña"><br>
+
+                        <label for="fecha_nac">Fecha de nacimiento:</label>
+                        <input type="date" id="fecha_nac" name="fecha_nac"><br>
+
+                        <label for="direccion">Dirección:</label>
+                        <textarea name="direccion" rows="5" cols="40">Escribe tu dirección aquí</textarea><br>
+
+                        <label>Genero:</label>
+                        <label for="varon">Varon</label>
+                        <input type="radio" id="varon" name="genero" value="varon">
+
+                        <label for="mujer">Mujer</label>
+                        <input type="radio" id="mujer" name="genero" value="mujer"> <br>
+
+                        <label><u>Aficiones:</u></label><br>
+                        <label for="deporte">Deporte</label>
+                        <input type="checkbox" id="deporte" name="deporte"><br>
+                            
+                        <label for="lectura">Lectura</label>
+                        <input type="checkbox" id="lectura" name="lectura"><br>
+                            
+                        <label for="cine">Cine</label>
+                        <input type="checkbox" id="cine" name="cine"><br>
+                            
+                        <label for="musica">Música</label>
+                        <input type="checkbox" id="musica" name="musica"><br>
+                            
+
+                        <label for="intereses">Intereses:</label>
+                        <textarea name="intereses" rows="5" cols="40">Escribe tus intereses aquí</textarea><br>
+
+                        <label for="foto">Suba su foto:</label>
+                        <input type="file" id="foto" name="foto"><br>
+
+                        <input type="submit" value="Alta">
+                        <input type="reset" value="Borrar">
+                        </form>
+
+                    </td>
+
+                </tr>
+            </table>
+        </td>
+        
+
+
+        </tr>
+    </table>
+    </body>
+</html> 

@@ -1,0 +1,27 @@
+#tabla_general{
+    border-style: solid;
+    border-color: black;
+
+    padding: 15px;
+
+    justify-content: center;
+    align-items: center;
+}
+
+#tabla_izquierda, #tabla_derecha{
+    justify-content: center;
+    align-items: center;
+}
+
+#tabla_derecha{
+    margin-left: 30px;
+    border-style: solid;
+    border-width: 2px;
+
+}
+
+#formulario {
+    padding: 7px;
+    padding-top: 10px;
+
+}
