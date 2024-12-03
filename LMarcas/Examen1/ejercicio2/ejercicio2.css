@@ -8,13 +8,12 @@ body{
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
 
-    column-gap: 100px;
-    row-gap: 100px;
+    grid-gap: 100px;
 }
 
 
 div#texto1, div#texto2, div#texto3, div#imagen1, div#imagen2, div#imagen3{
-    display: inline-block;
+    
 }
 
 div#texto1{
