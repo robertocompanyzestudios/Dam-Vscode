@@ -1,4 +1,4 @@
-/*
+/*	
 Realiza un programa que lea un número positivo N y calcule y visualice su factorial N!
 Siendo el factorial:
 0! = 1
@@ -22,7 +22,7 @@ public class Ejer3{
 		System.out.println("factorial = " + factorial(num));
 	}
 
-	public static int factorial(int x){
+	public static double factorial(int x){
 
 		if(x == 0 || x == 1){
 			return 1;
