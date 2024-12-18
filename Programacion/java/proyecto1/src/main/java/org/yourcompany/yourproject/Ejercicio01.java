@@ -1,4 +1,6 @@
-  	// Multiplo1.java
+  	package org.yourcompany.yourproject;
+
+	// Multiplo1.java
 	// Fecha: 14/10/2013
 	// Autor/a:.......
 	// Escribe en pantalla los múltiplos de 2 por debajo de un TOPE, 16.

@@ -1,4 +1,6 @@
-  	// Multiplo1.java
+  	package org.yourcompany.yourproject;
+
+	// Multiplo1.java
 	// Fecha: 14/10/2013
 	// Autor/a:.......
 	// Escribe en pantalla los múltiplos de 2 por debajo de un TOPE, 16.
@@ -14,12 +16,12 @@
             System.out.println("(Introduzca el tope: )");
             int TOPE = teclado.nextInt();
 
-			mostrarMultiplos1(TOPE);
+			mostrarMultiplos2(TOPE);
 
 			teclado.close();
 		}
 
-		public static void mostrarMultiplos1(int tope){
+		public static void mostrarMultiplos2(int tope){
 			int mult  ;							// Almacena el múltiplo calculado
 			int cont  ;							// Contador utilizado en el cálculo
 
