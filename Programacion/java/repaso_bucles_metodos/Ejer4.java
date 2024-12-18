@@ -1,4 +1,4 @@
-/*
+	/*
 Realiza un programa donde el usuario "piensa" un número del 1 al 100 y el ordenador intenta
 adivinarlo. Es decir, el ordenador irá proponiendo números una y otra vez hasta adivinarlo (para cada número que proponga el ordenador, el usuario deberá indicarle al ordenador si es mayor, menor o igual al número que ha pensado).
 */
@@ -9,7 +9,7 @@ public class Ejer4{
 	public static void main(String[] args) {
 		Scanner teclado = new Scanner(System.in);
 
-		int mayormenor;
+		int mayormenor;s
 		int acertado;
 		int min = 0;
 		int max = 100;
