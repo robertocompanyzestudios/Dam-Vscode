@@ -77,7 +77,7 @@ public class ejer16{
             for(int j = identificador[0]; j < identificador[0] + 3; j++){
                 matriz_resultado[i - identificador[1]][j - identificador[0]] = matriz[i][j];
             }
-        }
+        }  
 
         return matriz_resultado;
     }
