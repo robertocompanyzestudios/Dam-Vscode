@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<fechas>
+    <fecha>
+        <día>12</día>
+        <mes>enero</mes>
+    </fecha>
+
+    <fecha>
+        <día>7</día>
+        <mes>abril</mes>
+    </fecha>
+
+    <fecha>
+        <día>25</día>
+        <mes>octubre</mes>
+    </fecha>
+</fechas>
