@@ -1,18 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<fechas>
-    <fecha>
-        <día>12</día>
-        <mes>enero</mes>
-    </fecha>
+<equipos>
+    <equipo>
+        <nombre></nombre>
+        <ciudad></ciudad>
+        <entrenador></entrenador>
+        <jugador posicion =""></jugador>
+        <jugador posicion =""></jugador>
+    </equipo>
 
-    <fecha>
-        <día>7</día>
-        <mes>abril</mes>
-    </fecha>
+    <equipo>
+        <nombre></nombre>
+        <ciudad></ciudad>
+        <entrenador></entrenador>
+        <jugador posicion =""></jugador>
+        <jugador posicion =""></jugador>
+    </equipo>
 
-    <fecha>
-        <día>25</día>
-        <mes>octubre</mes>
-    </fecha>
-</fechas>
+</equipos>
