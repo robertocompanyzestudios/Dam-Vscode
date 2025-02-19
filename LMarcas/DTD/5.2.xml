@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE Consultas [
+    <!ELEMENT Consultas (Centro_dia*)>
+    <!ELEMENT Centro_dia (Datos, Consulta+, Consulta?)>
+    <!ELEMENT Datos (#PCDATA)>
+
+    <!ELEMENT Consulta (Compañia_Privada?, Hora_Asignada, Hora_Llamada, Tiempo_Espera)>
+    <!ATTLIST Consulta Codigo CDATA #REQUIRED>
+    <!ATTLIST Consulta Estado (C | O | D) "O">
+    <!ELEMENT Compañia_Privada EMPTY>
+    <!ATTLIST Compañia_Privada nombre CDATA #IMPLIED>
+    <!ELEMENT Hora_Asignada (#PCDATA)>
+    <!ELEMENT Hora_Llamada (#PCDATA)>
+    <!ELEMENT Tiempo_Espera (#PCDATA)>
+
+]>
+
+<Consultas>
+    <Centro_dia>
+        <Datos>CENTRO MÉDICO SALUS OINFIRMORUM (CMSI) 23-03-2021</Datos>
+
+        <Consulta Codigo="05Edc" Estado="O">
+            <Compañia_Privada></Compañia_Privada>
+            <Hora_Asignada>9:05</Hora_Asignada>
+            <Hora_Llamada>9:07</Hora_Llamada>
+            <Tiempo_Espera>2 m</Tiempo_Espera>
+        </Consulta>
+
+        <Consulta Codigo="07WEV" Estado="D">
+            <Compañia_Privada></Compañia_Privada>
+            <Hora_Asignada>10:00</Hora_Asignada>
+            <Hora_Llamada>10:30</Hora_Llamada>
+            <Tiempo_Espera>30 m</Tiempo_Espera>
+        </Consulta>
+
+    </Centro_dia>
+</Consultas>

@@ -1,0 +1,365 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<relacionsql numrelacion="R7.1">
+	<configdb>
+		<hostdb>localhost</hostdb>
+		<esquemadb>tienda</esquemadb>
+		<usuariodb>tienda</usuariodb>
+		<passdb>tienda</passdb>
+	</configdb>
+	<student>
+		<alumno>COMPANY ZOMEÑO, ROBERTO</alumno>
+		<finalgrade>0</finalgrade>
+		<totalgrade>0</totalgrade>
+		<maxgrade>0</maxgrade>
+	</student>
+	<consultas>
+		<query id="1" peso="1">
+			<descq>
+				Lista el nombre de todos los productos que hay en la tabla producto.
+			</descq>
+			<resppropo>
+				SELECT nombre from producto
+			</resppropo>
+			<respcorr>
+			</respcorr>
+			<gradeq></gradeq>
+			<feedback></feedback>
+		</query>
+		<query id="2" peso="1">
+			<descq>Lista los nombres y los precios de todos los productos de la tabla producto.</descq>
+			<resppropo>
+				select nombre, precio from producto
+			</resppropo>
+			<respcorr>
+			</respcorr>
+			<gradeq></gradeq>
+			<feedback></feedback>
+		</query>
+		<query id="3" peso="1">
+			<descq>Lista todas las columnas de la tabla producto</descq>
+			<resppropo>
+			
+			</resppropo>
+			<respcorr>
+			</respcorr>
+			<gradeq></gradeq>
+			<feedback></feedback>
+		</query>
+		<query id="4" peso="1">
+			<descq>
+				Lista el nombre de los productos, el precio en euros y el precio en dólares estadounidenses (USD) (21% de iva).
+			</descq>
+			<resppropo>
+			</resppropo>
+			<respcorr>
+			</respcorr>
+			<gradeq></gradeq>
+			<feedback></feedback>
+		</query>
+		<query id="5" peso="1">
+			<descq>Lista el nombre de los productos, el precio en euros y el precio en dólares estadounidenses (USD). Utiliza los siguientes alias para las columnas: nombre, euros, dolares.</descq>
+			<resppropo>
+			</resppropo>
+			<respcorr>
+			</respcorr>
+			<gradeq></gradeq>
+			<feedback></feedback>
+		</query>
+		<query id="6" peso="1">
+			<descq>Lista los nombres y los precios de todos los productos de la tabla producto, convirtiendo los nombres a mayúscula.
+			</descq>
+			<resppropo>
+			</resppropo>
+			<respcorr>
+			</respcorr>
+			<gradeq></gradeq>
+			<feedback></feedback>
+		</query>
+		<query id="7" peso="1">
+			<descq>
+				Lista los nombres y los precios de todos los productos de la tabla producto, convirtiendo los nombres a minúscula.
+			</descq>
+			<resppropo>
+			</resppropo>
+			<respcorr>
+			</respcorr>
+			<gradeq></gradeq>
+			<feedback></feedback>
+		</query>
+		<query id="8" peso="1">
+			<descq>Lista el nombre de todos los fabricantes en una columna, y en otra columna llamada INI obtenga en mayúsculas los dos primeros caracteres del nombre del fabricante.</descq>
+			<resppropo>
+			</resppropo>
+			<respcorr>
+			</respcorr>
+			<gradeq></gradeq>
+			<feedback></feedback>
+		</query>
+		<query id="9" peso="1">
+			<descq>Lista los nombres y los precios de todos los productos de la tabla producto, redondeando el valor del precio.</descq>
+			<resppropo>
+			</resppropo>
+			<respcorr>
+			</respcorr>
+			<gradeq></gradeq>
+			<feedback></feedback>
+		</query>
+		<query id="10" peso="1">
+			<descq>Lista los nombres y los precios de todos los productos de la tabla producto, truncando el valor del precio para mostrarlo sin ninguna cifra decimal, llama a ese campo preciotrunc</descq>
+			<resppropo>
+			</resppropo>
+			<respcorr>
+			</respcorr>
+			<gradeq></gradeq>
+			<feedback></feedback>
+		</query>
+		<query id="11" peso="1">
+			<descq>Lista el identificador de los fabricantes que tienen productos en la tabla producto.</descq>
+			<resppropo>
+			</resppropo>
+			<respcorr>
+			</respcorr>
+			<gradeq></gradeq>
+			<feedback></feedback>
+		</query>
+		<query id="12" peso="1">
+			<descq>
+				Lista el identificador de los fabricantes que tienen productos en la tabla producto, eliminando los identificadores que aparecen repetidos.
+			</descq>
+			<resppropo>
+			</resppropo>
+			<respcorr>
+			</respcorr>
+			<gradeq></gradeq>
+			<feedback></feedback>
+		</query>
+		<query id="13" peso="1">
+			<descq>
+				Lista los nombres de los fabricantes ordenados de forma ascendente.
+			</descq>
+			<resppropo>
+			</resppropo>
+			<respcorr>
+			</respcorr>
+			<gradeq></gradeq>
+			<feedback></feedback>
+		</query>
+		<query id="14" peso="1">
+			<descq>Lista los nombres de los fabricantes ordenados de forma descendente.</descq>
+			<resppropo>
+			</resppropo>
+			<respcorr>
+			</respcorr>
+			<gradeq></gradeq>
+			<feedback></feedback>
+		</query>
+		<query id="15" peso="1">
+			<descq>Lista los nombres de los productos ordenados en primer lugar por el nombre de forma ascendente y en segundo lugar por el precio de forma descendente.</descq>
+			<resppropo>
+			</resppropo>
+			<respcorr>
+			</respcorr>
+			<gradeq></gradeq>
+			<feedback></feedback>
+		</query>
+		<query id="16" peso="1">
+			<descq>Devuelve una lista con todos los campos de las 5 primeras filas de la tabla fabricante.</descq>
+			<resppropo>
+			</resppropo>
+			<respcorr>
+			</respcorr>
+			<gradeq></gradeq>
+			<feedback></feedback>
+		</query>
+		<query id="17" peso="1">
+			<descq>Devuelve una lista con todos los campos de 2 filas a partir de la cuarta fila de la tabla fabricante. La cuarta fila también se debe incluir en la respuesta.</descq>
+			<resppropo>
+			</resppropo>
+			<respcorr>
+			</respcorr>
+			<gradeq></gradeq>
+			<feedback></feedback>
+		</query>
+		<query id="18" peso="1">
+			<descq>
+				Lista el nombre y el precio del producto más barato. (Utilice solamente las cláusulas ORDER BY y LIMIT)
+			</descq>
+			<resppropo>
+			</resppropo>
+			<respcorr>
+			</respcorr>
+			<gradeq></gradeq>
+			<feedback></feedback>
+		</query>
+		<query id="19" peso="1">
+			<descq>Lista el nombre y el precio del producto más caro. (Utilice solamente las cláusulas ORDER BY y LIMIT)</descq>
+			<resppropo>
+			</resppropo>
+			<respcorr>
+			</respcorr>
+			<gradeq></gradeq>
+			<feedback></feedback>
+		</query>
+		<query id="20" peso="1">
+			<descq>Lista el nombre de todos los productos del fabricante cuyo identificador de fabricante es igual a 2.</descq>
+			<resppropo>
+			</resppropo>
+			<respcorr>
+			</respcorr>
+			<gradeq></gradeq>
+			<feedback></feedback>
+		</query>
+		<query id="21" peso="1">
+			<descq>Lista el nombre de los productos que tienen un precio menor o igual a 120€.</descq>
+			<resppropo>
+			</resppropo>
+			<respcorr>
+			</respcorr>
+			<gradeq></gradeq>
+			<feedback></feedback>
+		</query>
+		<query id="22" peso="1">
+			<descq>
+				Lista el nombre de los productos que tienen un precio mayor o igual a 400€.
+			</descq>
+			<resppropo>
+			</resppropo>
+			<respcorr>
+			</respcorr>
+			<gradeq></gradeq>
+			<feedback></feedback>
+		</query>
+		<query id="23" peso="1">
+			<descq>
+				Lista el nombre de los productos que no tienen un precio mayor o igual a 400€.
+			</descq>
+			<resppropo>
+			</resppropo>
+			<respcorr>
+			</respcorr>
+			<gradeq></gradeq>
+			<feedback></feedback>
+		</query>
+		<query id="24" peso="1">
+			<descq>Lista todos los campos de los productos que tengan un precio entre 80€ y 300€. Sin utilizar el operador BETWEEN.</descq>
+			<resppropo>
+			</resppropo>
+			<respcorr>
+			</respcorr>
+			<gradeq></gradeq>
+			<feedback></feedback>
+		</query>
+		<query id="25" peso="1">
+			<descq>Lista todos los campos de los productos que tengan un precio entre 60€ y 200€. Utilizando el operador BETWEEN.</descq>
+			<resppropo>
+			</resppropo>
+			<respcorr>
+			</respcorr>
+			<gradeq></gradeq>
+			<feedback></feedback>
+		</query>
+		<query id="26" peso="1">
+			<descq>Lista todos los campos de los productos que tengan un precio mayor que 200€ y que el identificador de fabricante sea igual a 6.</descq>
+			<resppropo>
+			</resppropo>
+			<respcorr>
+			</respcorr>
+			<gradeq></gradeq>
+			<feedback></feedback>
+		</query>
+		<query id="27" peso="1">
+			<descq>Lista todos los campos de los productos donde el identificador de fabricante sea 1, 3 o 5. Sin utilizar el operador IN.</descq>
+			<resppropo>
+			</resppropo>
+			<respcorr>
+			</respcorr>
+			<gradeq></gradeq>
+			<feedback></feedback>
+		</query>
+		<query id="28" peso="1">
+			<descq>
+				Lista todos los los campos de los productos donde el identificador de fabricante sea 1, 3 o 5. Utilizando el operador IN.
+			</descq>
+			<resppropo>
+			</resppropo>
+			<respcorr>
+			</respcorr>
+			<gradeq></gradeq>
+			<feedback></feedback>
+		</query>
+		<query id="29" peso="1">
+			<descq>Lista el nombre y el precio de los productos en céntimos. Cree un alias para la columna que contiene el precio que se llame centimos.</descq>
+			<resppropo>
+			</resppropo>
+			<respcorr>
+			</respcorr>
+			<gradeq></gradeq>
+			<feedback></feedback>
+		</query>
+		<query id="30" peso="1">
+			<descq>Lista los nombres de los fabricantes cuyo nombre empiece por la letra S.</descq>
+			<resppropo>
+			</resppropo>
+			<respcorr>
+			</respcorr>
+			<gradeq></gradeq>
+			<feedback></feedback>
+		</query>
+		<query id="31" peso="1">
+			<descq>
+				Lista los nombres de los fabricantes cuyo nombre termine por la vocal e.
+			</descq>
+			<resppropo>
+			</resppropo>
+			<respcorr>
+			</respcorr>
+			<gradeq></gradeq>
+			<feedback></feedback>
+		</query>
+		<query id="32" peso="1">
+			<descq>Lista los nombres de los fabricantes cuyo nombre contenga el carácter w.</descq>
+			<resppropo>
+			</resppropo>
+			<respcorr>
+			</respcorr>
+			<gradeq></gradeq>
+			<feedback></feedback>
+		</query>
+		<query id="33" peso="1">
+			<descq>Lista los nombres de los fabricantes cuyo nombre sea de 4 caracteres.</descq>
+			<resppropo>
+			</resppropo>
+			<respcorr>
+			</respcorr>
+			<gradeq></gradeq>
+			<feedback></feedback>
+		</query>
+		<query id="34" peso="1">
+			<descq>Devuelve una lista con el nombre de todos los productos que contienen la cadena Portátil en el nombre.</descq>
+			<resppropo>
+			</resppropo>
+			<respcorr>
+			</respcorr>
+			<gradeq></gradeq>
+			<feedback></feedback>
+		</query>
+		<query id="35" peso="1">
+			<descq>Devuelve una lista con el nombre de todos los productos que contienen la cadena Monitor en el nombre y tienen un precio inferior a 215 €.</descq>
+			<resppropo>
+			</resppropo>
+			<respcorr>
+			</respcorr>
+			<gradeq></gradeq>
+			<feedback></feedback>
+		</query>
+		<query id="36" peso="1">
+			<descq>Lista el nombre y el precio de todos los productos que tengan un precio mayor o igual a 180€. Ordene el resultado en primer lugar por el precio (en orden descendente) y en segundo lugar por el nombre (en orden ascendente).</descq>
+			<resppropo>
+			</resppropo>
+			<respcorr>
+			</respcorr>
+			<gradeq></gradeq>
+			<feedback></feedback>
+		</query>
+	</consultas> 
+</relacionsql>
