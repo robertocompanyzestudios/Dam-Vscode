@@ -40,7 +40,7 @@ function createHearts() {
         heart.style.position = 'fixed';
         heart.style.left = Math.random() * window.innerWidth + 5 + 'px';
 
-        heart.style.animationDuration = (Math.random() * 3 + 2) + 's';
+        heart.style.animationDuration = (Math.random() * 3 + 3) + 's';
     }
 }
 createHearts();
