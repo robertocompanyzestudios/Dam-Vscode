@@ -30,17 +30,21 @@ function showMessage() {
 }
 
 function createHearts() {
-    for (let i = 0; i < 20; i++) {
-                let heart = document.createElement('div');
+    for (let i = 0; i < 15; i++) {
+        let heart = document.createElement('div');
         heart.classList.add('heart');
         document.body.appendChild(heart);
+        //Estilo corazones
+        heart.style.backgroundImage = "url('./img/corazones/corazon-" + (Math.floor(Math.random() * 4) + 1) + ".png')";
+
+
 
         //fija la posicion de los corazones
         heart.style.bottom = Math.random() * window.innerHeight + 5 +'px';
         heart.style.position = 'fixed';
         heart.style.left = Math.random() * window.innerWidth + 5 + 'px';
 
-        heart.style.animationDuration = (Math.random() * 3 + 2) + 's';
+        heart.style.animationDuration = (Math.random() * 3 + 3) + 's';
     }
 }
 createHearts();
