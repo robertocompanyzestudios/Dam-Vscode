@@ -1,0 +1,46 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="personas">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="persona" minOccurs="1" maxOccurs="unbounded">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:choice>
+                                <xs:element name="varon"/>
+                                <xs:element name="femenino"/>
+                            </xs:choice>
+                            <xs:element name="direccion" minOccurs="1" maxOccurs="unbounded">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="calle" type="xs:string"></xs:element>
+                                        <xs:element name="poblacion" type="xs:string"></xs:element>
+                                        <xs:element name="provincia" type="xs:string"></xs:element>
+                                        <xs:element name="cpostal" type="xs:string"></xs:element>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                            <xs:element name="nacimiento">
+                                <xs:complexType>
+                                    <xs:simpleContent>
+                                        <xs:extension base="xs:string">
+                                            //A medio hacer
+                                            <xs:attribute name="dia">
+                                                <xs:simpleType>
+                                                    <xs:restriction base="xs:integer">
+                                                        <xs:minInclusive value="1"/>
+                                                        <xs:maxInclusive value="31"/>
+                                                    </xs:restriction>
+                                                </xs:simpleType>
+                                            </xs:attribute>
+                                        </xs:extension>
+                                    </xs:simpleContent>
+                                </xs:complexType>
+                            </xs:element>
+                            <xs:element name="nombre"/>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>

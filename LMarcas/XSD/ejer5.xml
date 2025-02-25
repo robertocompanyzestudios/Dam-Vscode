@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<futbol xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="ejer5.xsd">
+
+  <jugador nombre="Alfredo Di Stéfano" codigo="1"/>
+  <jugador nombre="Edson Arantes do Nascimento, Pelé" codigo="2" />
+  <jugador nombre="Diego Armando Maradona" codigo="3" />
+  <jugador nombre="Johan Cruyff" codigo="4" />
+
+
+</futbol>
