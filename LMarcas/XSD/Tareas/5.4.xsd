@@ -19,11 +19,10 @@
                                     </xs:sequence>
                                 </xs:complexType>
                             </xs:element>
-                            <xs:element name="nacimiento">
+                            <xs:element name="nacimiento" minOccurs="0" maxOccurs="1">
                                 <xs:complexType>
                                     <xs:simpleContent>
                                         <xs:extension base="xs:string">
-                                            //A medio hacer
                                             <xs:attribute name="dia">
                                                 <xs:simpleType>
                                                     <xs:restriction base="xs:integer">
@@ -32,11 +31,35 @@
                                                     </xs:restriction>
                                                 </xs:simpleType>
                                             </xs:attribute>
+                                            <xs:attribute name="mes">
+                                                <xs:simpleType>
+                                                    <xs:restriction base="xs:string">
+                                                        <xs:enumeration value="Enero"/>
+                                                        <xs:enumeration value="Febrero"/>
+                                                        <xs:enumeration value="Marzo"/>
+                                                        <xs:enumeration value="Abril"/>
+                                                        <xs:enumeration value="Mayo"/>
+                                                        <xs:enumeration value="Junio"/>
+                                                        <xs:enumeration value="Julio"/>
+                                                        <xs:enumeration value="Agosto"/>
+                                                        <xs:enumeration value="Septiembre"/>
+                                                        <xs:enumeration value="Noviembre"/>
+                                                        <xs:enumeration value="Octubre"/>
+                                                        <xs:enumeration value="Diciembre"/>
+                                                    </xs:restriction>
+                                                </xs:simpleType>
+                                            </xs:attribute>
+                                            <xs:attribute name="anyo">
+                                                <xs:simpleType>
+                                                    <xs:restriction base="xs:integer"/>
+                                                </xs:simpleType>
+                                            </xs:attribute>
                                         </xs:extension>
                                     </xs:simpleContent>
                                 </xs:complexType>
                             </xs:element>
-                            <xs:element name="nombre"/>
+                            <xs:element name="nombre" type="xs:string">
+                            </xs:element>
                         </xs:sequence>
                     </xs:complexType>
                 </xs:element>
