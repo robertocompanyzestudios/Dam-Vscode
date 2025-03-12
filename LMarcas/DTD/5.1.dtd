@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE dam [
+    <!ELEMENT dam (modulo*, modulo?)>
+    <!ELEMENT modulo (titulo    , contenido+)>
+    <!ELEMENT titulo (#PCDATA)>
+    <!ELEMENT contenido (unidad*, unidad?)>
+    <!ELEMENT unidad (#PCDATA)>
+]>
