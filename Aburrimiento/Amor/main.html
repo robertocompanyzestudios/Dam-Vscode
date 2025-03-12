@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Un añazo juntos ya!</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+            scroll-behavior: smooth;
+        }
+        body {
+            overflow-x: hidden;
+        }
+        header {
+            width: 100%;
+            background: #ff5c8d;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            font-size: 1.2rem;
+            font-weight: bold;
+        }
+        .hero {
+            position: relative;
+            width: 100%;
+            height: 100vh;
+            background: url('./img/main/fanfutura1.JPEG') center/cover no-repeat;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        @media (max-width: 768px) {
+            .hero {
+            background: url('./img/main/fanfutura2.JPEG') center/cover no-repeat;
+        }
+}
+        .hero-overlay {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.1);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .hero-text {
+            background: rgba(255, 255, 255, 0.75);
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+        }
+        .hero-text h1 {
+            font-size: 2rem;
+            color: #333;
+        }
+        .hero-text p {
+            color: #555;
+        }
+        .sections {
+            background: #f5f5f5;
+            padding: 50px 20px;
+            padding-top: 10px;
+        }
+        .section {
+            max-width: 100vw;
+            margin: 20px auto;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            opacity: 0;
+            transform: translateY(50px);
+            transition: all 0.6s ease-out;
+            justify-content: center;
+        }
+        .section.show {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        .section h2 {
+            margin-bottom: 10px;
+        }
+        
+        .section img {
+            height: 50vw;
+            width: 80vw;
+            object-fit: cover;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+        .nav-buttons {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        .nav-buttons button {
+            background: #ff5c8d;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1rem;
+        }
+    </style>
+</head>
+<body>
+    <header>¡Un añazo juntos ya!</header>
+    <div class="hero">
+        <div class="hero-overlay">
+            <div class="hero-text">
+                <h1>Nuestra Historia</h1>
+                <p>Descubre cómo comenzó todo</p>
+            </div>
+        </div>
+    </div>
+    <div class="sections">
+        <div class="section" id="section1">
+            <h2>Cómo nos conocimos</h2>
+            <img src="./img/main/intercampus1.JPEG" alt="Cómo nos conocimos">
+            <p>Nos conocimos en un momento inesperado, pero mágico. Fue en una tarde soleada de primavera cuando nuestras miradas se cruzaron por primera vez. No sabíamos que aquel encuentro cambiaría nuestras vidas para siempre, pero fue el comienzo de algo maravilloso.</p>
+            <p>Recuerdo que, al principio, era un poco tímido, pero enseguida nos encontramos conversando como si nos conociéramos de toda la vida. Aquella conexión instantánea fue el primer paso hacia lo que hoy tenemos: una historia llena de amor, risas y complicidad.</p>
+        </div>
+        <div class="section" id="section2">
+            <h2>Nuestra primera cita</h2>
+            <img src="./img/first-date.jpg" alt="Nuestra primera cita">
+            <p>La primera cita fue un día inolvidable. Decidimos ir a nuestro restaurante favorito, ese lugar especial donde nos sentamos por horas hablando de todo y de nada. Lo que más me sorprendió fue lo fácil que fue estar contigo, cómo el tiempo parecía volar sin que nos diéramos cuenta.</p>
+            <p>Desde aquel día, todo fue diferente. Cada palabra, cada gesto, me hizo darme cuenta de que quería pasar más momentos como ese a tu lado. Fue el primer día de muchos, el inicio de nuestra aventura juntos.</p>
+        </div>
+        <div class="section" id="section3">
+            <h2>Un año lleno de felicidad</h2>
+            <img src="./img/commitment.jpg" alt="El compromiso">
+            <p>El compromiso llegó de una manera tan natural como todo lo demás en nuestra relación. Después de compartir tantos momentos juntos, reírnos, llorar, apoyarnos mutuamente, llegó el día en el que decidimos dar ese gran paso. Un sí que fue mucho más que un simple compromiso; fue la promesa de seguir caminando juntos, de seguir construyendo una vida compartida.</p>
+            <p>El día de nuestro compromiso fue perfecto. Estábamos rodeados de amor, y en ese momento supe que no hay nada que desee más que pasar el resto de mi vida contigo, creciendo juntos, enfrentando todo lo que venga con la fuerza de nuestro amor.</p>
+        </div>
+    </div>
+    <div class="nav-buttons">
+        <button onclick="scrollToSection('section1')">Cómo nos conocimos</button>
+        <button onclick="scrollToSection('section2')">Nuestra primera cita</button>
+        <button onclick="scrollToSection('section3')">Un año lleno de felicidad</button>
+    </div>
+    <script>
+        function scrollToSection(id) {
+            document.getElementById(id).scrollIntoView({ behavior: 'smooth' });
+        }
+        
+        document.addEventListener("scroll", () => {
+            document.querySelectorAll(".section").forEach(section => {
+                const sectionPos = section.getBoundingClientRect().top;
+                if (sectionPos < window.innerHeight * 0.95) {
+                    section.classList.add("show");
+                } else {
+                    section.classList.remove("show")
+                }
+            });
+        });
+    </script>
+</body>
+</html>

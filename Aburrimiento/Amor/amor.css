@@ -46,7 +46,7 @@ button {
 
     box-shadow: 1px 1px 1px rgb(107, 102, 102);
 
-    background-image: url("./img/fondo-lazo-esquina.jpg");
+    background-image: url("./img/fondo-lazo-esquina.jpg")!important;
     background-size: cover;
     
     font-family: 'Dancing Script';
@@ -76,6 +76,7 @@ button {
     background-color: transparent;
     color: transparent;
     position: relative;
+    pointer-events: none;
 }
 
 
